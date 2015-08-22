@@ -1,0 +1,10 @@
+{
+  "name": "Salud al Paso",
+  "main": "index.html",
+  "window": {
+    "toolbar": true,
+    "width": 500,
+    "height": 600,
+    "icon": "img/ecg.png"
+  }
+}
