@@ -354,7 +354,9 @@
   <canvas id="mycanvas" width="1200" height="400"></canvas>
   <br>
   <br>
+  <div>Frecuencia cardíaca: <span id="frecuencia_cardiaca"></span></div>
   <div id="name">Intentando conectar</div>
+
   <br>
 
 
@@ -446,10 +448,17 @@
 
   function control()
   {
+    p_('frecuencia_cardiaca').innerHTML = count;
     if(count>=20)
     {
-      console.log("Mayor a 100 pulsaciones por minuto");
+      //console.log("Mayor a 100 pulsaciones por minuto");
+      p_display('registro', true);
+
+    } else {
+      //
+      p_display('registro', false);
     }
+
     count=0;
   }
 

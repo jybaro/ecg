@@ -1319,7 +1319,7 @@ function p_generar_doc(emocion) {
         
         doc._id = 'formulario|' + '|'+ ahora +'|'+ Math.random();
         doc.emocion = emocion;
-        doc.frecuencia = 0;
+        doc.frecuencia = window.count;
 
         doc.creado = ahora;
         doc.modificado = ahora;
